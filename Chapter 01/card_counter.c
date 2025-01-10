@@ -5,7 +5,7 @@ int main() {
   char card_name[3];
   int count = 0;
 
-  while(card_name[0] != 'X') {
+  do {
     puts("Enter the card_name: ");
     scanf("%2s", card_name);
     int val = 0;
@@ -35,7 +35,7 @@ int main() {
       count--;
     }
     printf("Current count: %i\n", count);
-  }
+  } while(card_name[0] != 'X');
 
   return 0;
 }
